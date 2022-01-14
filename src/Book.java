@@ -1,22 +1,25 @@
-
-
 public class Book {
+    public int bookCount;
     String title;
     String author;
-    String numPages;
+    int quantityPages;
     String content;
+    String publicHouse;
 
     StringBuilder book = new StringBuilder();
 
-    public void setBook (String title, String author, String numPages, String content) {
+    public Book (String title, String author, int numPages, String content, String publicHouse) {
         this.title = title;
         this.author = author;
-        this.numPages = numPages;
+        this.quantityPages = numPages;
         this.content = content;
+        this.publicHouse = publicHouse;
+        bookCount ++;
     }
 
-    public void getBook () {
-        book.append(title).append(author).append(numPages).append(content);
+    public void printBook () {
+        book.append(title).append(", ").append(author).append(", ").append(quantityPages).append(", ").append(content).
+                append(", ").append(publicHouse);
         System.out.println(book);
     }
 
