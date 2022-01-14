@@ -1,16 +1,15 @@
 public class Book {
-    public int bookCount;
+    static int bookCount = 0; // Счетик количества книг
     String title;
-    String author;
+    Author author;
     int quantityPages;
     String content;
     String publicHouse;
 
     StringBuilder book = new StringBuilder();
 
-    public Book (String title, String author, int numPages, String content, String publicHouse) {
+    public Book (String title, int numPages, String content, String publicHouse) {
         this.title = title;
-        this.author = author;
         this.quantityPages = numPages;
         this.content = content;
         this.publicHouse = publicHouse;
@@ -23,4 +22,10 @@ public class Book {
         System.out.println(book);
     }
 
+    public String toString () {
+        return "Title: " + title + ", Author: " + author + "Quantity pages: " + quantityPages + "Content: " + content +
+                "Public house: " + publicHouse;
+    }
+
+    }
 }
