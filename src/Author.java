@@ -14,5 +14,4 @@ public class Author {
     public String toString (){
         return "Имя автора: " + firstName + " " + lastName + " " + "Год рождения: " + yearBirth;
     }
-
 }
