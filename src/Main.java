@@ -13,9 +13,6 @@ public class  Main {
         User user1 = new User("Дмитрий", "Песков", 1967, "peskov@mail.ru");
         User user2 = new User("Алексей", "Венедиктов", 1955);
         User user3 = new User("Александр", "Ширвиндт", 1934);
-//        book1.printBook();
-//        book2.printBook();
-//        book3.printBook();
         System.out.println("***********************");
         System.out.println("Количество книг в библиотеке: " + Book.bookCount);
         System.out.println(book1);
