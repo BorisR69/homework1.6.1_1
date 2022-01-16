@@ -19,4 +19,11 @@ public class Book {
               return "Title: " + title + ", Author: " + author.lastName + " " + author.firstName + ", Quantity pages: "
                       + quantityPages + ", Content: " + content + ", Public house: " + publicHouse;
     }
+
+    public void cardOfBook (){ // Печать карточки книги
+        System.out.println("\n*----Карточка книги----*");
+        System.out.println("Название: " + title + "\nАвтор: " + author.firstName + " " + author.lastName +
+                "\nКоличество страниц: " + quantityPages + "\nЖанр: " + content + "\nИздательство: " + publicHouse);
+        System.out.println("*---------------------*");
+        }
 }

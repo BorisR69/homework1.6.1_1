@@ -15,19 +15,19 @@ public class  Main {
         User user3 = new User("Александр", "Ширвиндт", 1934);
         System.out.println("***********************");
         System.out.println("Количество книг в библиотеке: " + Book.bookCount);
-        System.out.println(book1);
+        System.out.println(book1); // Демонстрация метода toString класса Book
         System.out.println(book2);
         System.out.println(book3);
         System.out.println("***********************");
         System.out.println("Количество авторов: " + Author.authorCount);
-        System.out.println(author1);
+        System.out.println(author1); // Демонстрация метода toString класса Author
         System.out.println(author2);
         System.out.println(author3);
         System.out.println("***********************");
         System.out.println("Количество пользователей: " + User.totalOnline);
-        System.out.println(user1);
+        System.out.println(user1); // Демонстрация метода toString класса User
         System.out.println(user2);
         System.out.println(user3);
-
+        book1.cardOfBook(); // Демонстрация метода печати карточки книги класса Book
     }
 }
